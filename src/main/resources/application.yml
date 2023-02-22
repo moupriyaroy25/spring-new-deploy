@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    
+    url: jdbc:sqlserver://root.database.windows.net:1433;database=rootazuredb1;user=rootadmin@root;password=root@123;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: '8091'
